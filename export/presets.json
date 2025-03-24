@@ -1,0 +1,86 @@
+[
+  {
+    "name": "untitled",
+    "preset": {
+      "__sps": {
+        "Bubble": {
+          "__sps": {
+            "LFO~": {},
+            "TapTempo": {}
+          },
+          "burst": {
+            "value": 2
+          },
+          "depth": {
+            "value": 50
+          },
+          "rate": {
+            "value": 25
+          }
+        },
+        "DelayTime": {
+          "__sps": {
+            "Quant": {
+              "TimeInBeats": {
+                "value": 3
+              },
+              "TimeInMS": {
+                "value": 500
+              },
+              "quant": {
+                "value": 1
+              }
+            }
+          }
+        },
+        "Gate": {
+          "threshold": {
+            "value": -100
+          }
+        },
+        "LowPass": {},
+        "Mix~": {},
+        "Pitch": {
+          "__sps": {
+            "FreqCalc": {},
+            "PitchShift~": {},
+            "PitchShift~[1]": {},
+            "Switch~": {}
+          },
+          "transp": {
+            "value": 4
+          }
+        },
+        "Saturation": {},
+        "ingain": {
+          "in": {
+            "value": 0
+          }
+        },
+        "outgain": {
+          "out": {
+            "value": 0
+          }
+        }
+      },
+      "feedback": {
+        "value": 75
+      },
+      "freq": {
+        "value": 500
+      },
+      "mix": {
+        "value": 0
+      },
+      "res": {
+        "value": 1
+      },
+      "saturation": {
+        "value": 1
+      },
+      "spread": {
+        "value": 0
+      }
+    }
+  }
+]

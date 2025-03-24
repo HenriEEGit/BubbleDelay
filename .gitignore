@@ -3,4 +3,3 @@ build/
 !/build/.gitkeep
 .vscode/
 .vs/
-export/*
