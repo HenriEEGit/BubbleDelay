@@ -1,0 +1,10 @@
+^C:\USERS\HENRI\DESKTOP\BUBBLEDELAY\BUBBLEDELAY\JUCE\TOOLS\CMAKEFILES\8C4B63261CDEB31BE837DC94F116E015\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce -BC:/Users/henri/Desktop/BubbleDelay/BubbleDelay/juce/tools --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/juce/tools/JUCE.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
