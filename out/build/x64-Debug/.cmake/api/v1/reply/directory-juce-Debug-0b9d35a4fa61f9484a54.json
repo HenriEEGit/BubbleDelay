@@ -1,0 +1,59 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"thirdparty/juce/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 146,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/JUCE-7.0.3",
+			"paths" : 
+			[
+				"out/build/x64-Debug/juce/JUCEConfigVersion.cmake",
+				"out/build/x64-Debug/juce/JUCEConfig.cmake",
+				"thirdparty/juce/extras/Build/CMake/JUCECheckAtomic.cmake",
+				"thirdparty/juce/extras/Build/CMake/JUCEHelperTargets.cmake",
+				"thirdparty/juce/extras/Build/CMake/JUCEModuleSupport.cmake",
+				"thirdparty/juce/extras/Build/CMake/JUCEUtils.cmake",
+				"thirdparty/juce/extras/Build/CMake/JuceLV2Defines.h.in",
+				"thirdparty/juce/extras/Build/CMake/LaunchScreen.storyboard",
+				"thirdparty/juce/extras/Build/CMake/PIPAudioProcessor.cpp.in",
+				"thirdparty/juce/extras/Build/CMake/PIPAudioProcessorWithARA.cpp.in",
+				"thirdparty/juce/extras/Build/CMake/PIPComponent.cpp.in",
+				"thirdparty/juce/extras/Build/CMake/PIPConsole.cpp.in",
+				"thirdparty/juce/extras/Build/CMake/RecentFilesMenuTemplate.nib",
+				"thirdparty/juce/extras/Build/CMake/UnityPluginGUIScript.cs.in",
+				"thirdparty/juce/extras/Build/CMake/checkBundleSigning.cmake",
+				"thirdparty/juce/extras/Build/CMake/copyDir.cmake",
+				"thirdparty/juce/extras/Build/CMake/juce_runtime_arch_detection.cpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "juce",
+		"source" : "thirdparty/juce"
+	}
+}

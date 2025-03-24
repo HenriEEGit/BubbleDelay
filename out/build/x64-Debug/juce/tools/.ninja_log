@@ -1,0 +1,13 @@
+# ninja log v5
+1105	12943	7644873021018903	extras/Build/juceaide/CMakeFiles/juceaide.dir/Main.cpp.obj	8defc772b866c9ec
+1093	3762	7644872929469848	CMakeFiles/juce_lv2_helper.dir/modules/juce_audio_plugin_client/LV2/juce_LV2TurtleDumpProgram.cpp.obj	24cae98adffaf32c
+79	1086	0	C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/out/build/x64-Debug/juce/tools/CMakeFiles/cmake.verify_globs	2377f116b46a6ade
+1170	8208	7644872973596547	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_data_structures/juce_data_structures.cpp.obj	bb046b19b6c4a88d
+3764	7664	7644872963852214	juce_lv2_helper.exe	aa9c3293e17f90c
+1148	11942	7644873010831362	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_events/juce_events.cpp.obj	cc165107de9029f7
+1116	12874	7644873020348488	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/juce_build_tools/juce_build_tools.cpp.obj	b3a0ff6e4605fbc3
+1160	18032	7644873071353239	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core.cpp.obj	83bd1f5ae20f5114
+1137	19514	7644873086761259	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics.cpp.obj	57120fcf90e41ef6
+1126	28393	7644873175556244	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_gui_basics/juce_gui_basics.cpp.obj	899c1f51d164d2cb
+28397	31342	7644873204069885	extras/Build/juceaide/juceaide_artefacts/Debug/juceaide.exe	9b3e0597505fc98e
+41	377	0	C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/out/build/x64-Debug/juce/tools/CMakeFiles/cmake.verify_globs	2377f116b46a6ade

@@ -1,0 +1,821 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "RNBOApp_artefacts/Debug/RNBO App Example.exe"
+		},
+		{
+			"path" : "RNBOApp_artefacts/Debug/RNBO App Example.pdb"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"juce_add_gui_app",
+			"include",
+			"target_link_libraries",
+			"target_compile_definitions",
+			"add_compile_definitions",
+			"add_definitions",
+			"rnbo_write_description_header_if_exists",
+			"include_directories",
+			"target_include_directories",
+			"_juce_initialise_target",
+			"target_sources",
+			"_juce_add_resources_rc",
+			"_juce_configure_app_bundle",
+			"juce_generate_juce_header"
+		],
+		"files" : 
+		[
+			"thirdparty/juce/extras/Build/CMake/JUCEUtils.cmake",
+			"App.cmake",
+			"CMakeLists.txt",
+			"export/rnbo/cmake/RNBODescriptionHeader.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1752,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 77,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 64,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 1755,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 58,
+				"parent" : 9
+			},
+			{
+				"command" : 8,
+				"file" : 2,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 1756,
+				"parent" : 3
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 1712,
+				"parent" : 12
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 53,
+				"parent" : 2
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 1760,
+				"parent" : 3
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 701,
+				"parent" : 15
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 692,
+				"parent" : 16
+			},
+			{
+				"command" : 14,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 2
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 428,
+				"parent" : 18
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 33,
+				"parent" : 2
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DWIN32 -D_DEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "DEBUG=1"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "JUCE_APPLICATION_NAME_STRING=\"RNBO App Example\""
+				},
+				{
+					"backtrace" : 6,
+					"define" : "JUCE_APPLICATION_VERSION_STRING=\"2.0.0\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_devices=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_processors=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_utils=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_core=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_data_structures=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_events=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_graphics=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_gui_basics=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_gui_extra=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_STANDALONE_APPLICATION=1"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "JUCE_USE_CURL=0"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "JUCE_VST3_EMULATE_MIDI_CC_WITH_PARAMETERS=0"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "JUCE_WEB_BROWSER=0"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "RNBO_INCLUDE_DESCRIPTION_FILE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_DEBUG=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/out/build/x64-Debug/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/out/build/x64-Debug/RNBOApp_artefacts/JuceLibraryCode"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo/src"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo/common"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo/adapters/juce"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo/src/3rdparty"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/src"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/ui/NewProject/Source"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/VST3_SDK"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/lv2"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/serd"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/sord"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/sord/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/sratom"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/lilv"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src"
+				}
+			],
+			"language" : "RC",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/bigobj"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/Od"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/Zi"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/EHsc"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/W4"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "DEBUG=1"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "JUCE_APPLICATION_NAME_STRING=\"RNBO App Example\""
+				},
+				{
+					"backtrace" : 6,
+					"define" : "JUCE_APPLICATION_VERSION_STRING=\"2.0.0\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_devices=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_processors=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_utils=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_core=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_data_structures=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_events=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_graphics=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_gui_basics=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_gui_extra=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_STANDALONE_APPLICATION=1"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "JUCE_USE_CURL=0"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "JUCE_VST3_EMULATE_MIDI_CC_WITH_PARAMETERS=0"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "JUCE_WEB_BROWSER=0"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "RNBO_INCLUDE_DESCRIPTION_FILE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_DEBUG=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/out/build/x64-Debug/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/out/build/x64-Debug/RNBOApp_artefacts/JuceLibraryCode"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo/src"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo/common"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo/adapters/juce"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo/src/3rdparty"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/src"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/ui/NewProject/Source"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/VST3_SDK"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/lv2"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/serd"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/sord"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/sord/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/sratom"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/lilv"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					5
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26
+			]
+		}
+	],
+	"id" : "RNBOApp::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:windows",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "RNBOApp",
+	"nameOnDisk" : "RNBO App Example.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				12,
+				13
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 17,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/RNBOApp_artefacts/JuceLibraryCode/resources.rc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 19,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/RNBOApp_artefacts/JuceLibraryCode/JuceHeader.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 1,
+			"path" : "src/Main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 1,
+			"path" : "src/MainComponent.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 1,
+			"path" : "src/CustomAudioEditor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 1,
+			"path" : "src/CustomAudioProcessor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 1,
+			"path" : "ui/NewProject/Source/NewComponent.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 1,
+			"path" : "export/rnbo_source.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 1,
+			"path" : "export/rnbo/RNBO.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 1,
+			"path" : "export/rnbo/adapters/juce/RNBO_JuceAudioProcessorUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 1,
+			"path" : "export/rnbo/adapters/juce/RNBO_JuceAudioProcessorEditor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 1,
+			"path" : "export/rnbo/adapters/juce/RNBO_JuceAudioProcessor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/RNBOApp_artefacts/JuceLibraryCode/resources.rc.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/RNBOApp_artefacts/JuceLibraryCode/JuceHeader.h.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_gui_extra/juce_gui_extra.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_gui_basics/juce_gui_basics.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_graphics/juce_graphics.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_events/juce_events.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_core/juce_core.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_data_structures/juce_data_structures.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_audio_basics/juce_audio_basics.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_audio_devices/juce_audio_devices.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_audio_formats/juce_audio_formats.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_audio_processors/juce_audio_processors.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_audio_processors/juce_audio_processors_ara.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "thirdparty/juce/modules/juce_audio_utils/juce_audio_utils.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

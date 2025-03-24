@@ -1,0 +1,164 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"build" : "juce",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-juce-Debug-0b9d35a4fa61f9484a54.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "thirdparty/juce"
+				},
+				{
+					"build" : "juce/modules",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-juce.modules-Debug-2ef3ea969636d8630305.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "thirdparty/juce/modules"
+				},
+				{
+					"build" : "juce/extras/Build",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-juce.extras.Build-Debug-12fb3e709f5c7c1fcaab.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "thirdparty/juce/extras/Build"
+				},
+				{
+					"build" : "juce/extras/Build/juceaide",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-juce.extras.Build.juceaide-Debug-acc471fd88b2e1f83328.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 1,
+					"source" : "thirdparty/juce/extras/Build/juceaide"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "RNBO_JUCE_EXAMPLE",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "JUCE",
+					"parentIndex" : 0
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "RNBOApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RNBOApp-Debug-5a86d0b12e7750a2e4c9.json",
+					"name" : "RNBOApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RNBOAudioPlugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RNBOAudioPlugin-Debug-49b213c04111175ea0d5.json",
+					"name" : "RNBOAudioPlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RNBOAudioPlugin_All::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RNBOAudioPlugin_All-Debug-774b620aba513a21b64b.json",
+					"name" : "RNBOAudioPlugin_All",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RNBOAudioPlugin_VST3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RNBOAudioPlugin_VST3-Debug-0d3bbf2039a2974a5d4e.json",
+					"name" : "RNBOAudioPlugin_VST3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/out/build/x64-Debug",
+		"source" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

@@ -1,0 +1,620 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "RNBOAudioPlugin_artefacts/Debug/VST3/Bubble Delay.vst3/Contents/x86_64-win/Bubble Delay.vst3"
+		},
+		{
+			"path" : "RNBOAudioPlugin_artefacts/Debug/VST3/Bubble Delay.pdb"
+		}
+	],
+	"backtrace" : 6,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_juce_link_plugin_wrapper",
+			"_juce_configure_plugin_targets",
+			"juce_add_plugin",
+			"include",
+			"target_link_libraries",
+			"add_compile_definitions",
+			"add_definitions",
+			"rnbo_write_description_header_if_exists",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"thirdparty/juce/extras/Build/CMake/JUCEUtils.cmake",
+			"Plugin.cmake",
+			"CMakeLists.txt",
+			"export/rnbo/cmake/RNBODescriptionHeader.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 61,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 19,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1767,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1226,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1043,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1056,
+				"parent" : 5
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 2,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 58,
+				"parent" : 9
+			},
+			{
+				"command" : 9,
+				"file" : 2,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 1053,
+				"parent" : 5
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/Od"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/Zi"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/EHsc"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/W4"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "DEBUG=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_devices=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_processors=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_utils=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_core=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_data_structures=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_events=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_graphics=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_gui_basics=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_gui_extra=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_USE_CURL=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_VST3_CAN_REPLACE_VST2=0"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "JUCE_VST3_EMULATE_MIDI_CC_WITH_PARAMETERS=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JUCE_WEB_BROWSER=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_AAXCategory=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_AAXDisableBypass=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_AAXDisableMultiMono=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_AAXIdentifier=com.Henrique Lorentz.RNBOAudioPlugin"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_AAXProductId=JucePlugin_PluginCode"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_ARACompatibleArchiveIDs=\"\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_ARAContentTypes=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_ARADocumentArchiveID=\"com.Henrique Lorentz.RNBOAudioPlugin.aradocumentarchive.1\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_ARAFactoryID=\"com.Henrique Lorentz.RNBOAudioPlugin.arafactory.2.0.0\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_ARATransformationFlags=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_AUExportPrefix=Bubble_DelayAU"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_AUExportPrefixQuoted=\"Bubble_DelayAU\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_AUMainType='aufx'"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_AUSubType=JucePlugin_PluginCode"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Build_AAX=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Build_AU=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Build_AUv3=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Build_LV2=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Build_Standalone=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Build_Unity=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Build_VST3=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Build_VST=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_CFBundleIdentifier=com.Henrique Lorentz.RNBOAudioPlugin"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Desc=\"Bubble Delay\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_EditorRequiresKeyboardFocus=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Enable_ARA=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_IsMidiEffect=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_IsSynth=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Manufacturer=\"Henrique Lorentz\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_ManufacturerCode=0x486c747a"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_ManufacturerEmail=\"\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_ManufacturerWebsite=\"\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Name=\"Bubble Delay\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_PluginCode=0x484c3031"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_ProducesMidiOutput=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_VSTCategory=kPlugCategEffect"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_VSTNumMidiInputs=16"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_VSTNumMidiOutputs=16"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_VSTUniqueID=JucePlugin_PluginCode"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Version=2.0.0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_VersionCode=0x20000"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_VersionString=\"2.0.0\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_Vst3Category=\"Fx\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JucePlugin_WantsMidiInput=0"
+				},
+				{
+					"define" : "RNBOAudioPlugin_VST3_EXPORTS"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "RNBO_INCLUDE_DESCRIPTION_FILE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "RNBO_JUCE_NO_CREATE_PLUGIN_FILTER=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "RNBO_JUCE_PARAM_DEFAULT_NOTIFY=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_DEBUG=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/out/build/x64-Debug/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/out/build/x64-Debug/RNBOAudioPlugin_artefacts/JuceLibraryCode"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo/src"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo/common"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo/adapters/juce"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/export/rnbo/src/3rdparty"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/src"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/ui/NewProject/Source"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/VST3_SDK"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/lv2"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/serd"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/sord"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/sord/src"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/sratom"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/lilv"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/henri/Desktop/BubbleDelay/BubbleDelay/thirdparty/juce/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					7
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "RNBOAudioPlugin::@6890427a1f51a3e7e1df"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "RNBOAudioPlugin"
+	},
+	"id" : "RNBOAudioPlugin_VST3::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "\"RNBOAudioPlugin_artefacts\\Debug\\Bubble Delay_SharedCode.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "RNBOAudioPlugin_VST3",
+	"nameOnDisk" : "Bubble Delay.vst3",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "thirdparty/juce/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "thirdparty/juce/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "thirdparty/juce/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "thirdparty/juce/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "thirdparty/juce/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "thirdparty/juce/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "thirdparty/juce/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}
