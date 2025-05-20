@@ -32,7 +32,7 @@ NewComponent::NewComponent ()
     //[Constructor_pre] You can add your own custom stuff here..
     //[/Constructor_pre]
 
-    setSize (800, 600);
+    setSize (640, 440);
 
     juce__slider.reset (new juce::Slider ("mix"));
     addAndMakeVisible (juce__slider.get());
@@ -41,11 +41,11 @@ NewComponent::NewComponent ()
     juce__slider->setTextBoxStyle (juce::Slider::TextBoxBelow, false, 80, 20);
     juce__slider->setNumDecimalPlacesToDisplay(2);
     juce__slider->setColour (juce::Slider::backgroundColourId, juce::Colour (0x00ffffff));
-    customLookAndFeel.setSliderLabel(juce__slider.get(), "mix");
+
     juce__slider->setLookAndFeel(&customLookAndFeel);
     juce__slider->addListener (this);
 
-    juce__slider->setBounds (720, 16, 64, 64);
+    juce__slider->setBounds (885, 25, 50, 70);
 
     juce__slider2.reset (new juce::Slider ("saturation"));
     addAndMakeVisible (juce__slider2.get());
@@ -58,7 +58,7 @@ NewComponent::NewComponent ()
     juce__slider2->setLookAndFeel(&customLookAndFeel);
     juce__slider2->addListener (this);
 
-    juce__slider2->setBounds (450, 320, 64, 64);
+    juce__slider2->setBounds (407, 525, 50, 70);
 
     juce__slider3.reset (new juce::Slider ("Gate/threshold"));
     addAndMakeVisible (juce__slider3.get());
@@ -71,7 +71,7 @@ NewComponent::NewComponent ()
     juce__slider3->setLookAndFeel(&customLookAndFeel);
     juce__slider3->addListener (this);
 
-    juce__slider3->setBounds (614, 320, 64, 64);
+    juce__slider3->setBounds (311, 525, 50, 70);
 
     juce__slider4.reset (new juce::Slider ("feedback"));
     addAndMakeVisible (juce__slider4.get());
@@ -84,7 +84,7 @@ NewComponent::NewComponent ()
     juce__slider4->setLookAndFeel(&customLookAndFeel);
     juce__slider4->addListener (this);
 
-    juce__slider4->setBounds (182, 350, 107, 107 );
+    juce__slider4->setBounds (442, 336, 75, 95);
 
     juce__slider5.reset (new juce::Slider ("freq"));
     addAndMakeVisible (juce__slider5.get());
@@ -97,7 +97,7 @@ NewComponent::NewComponent ()
     juce__slider5->setLookAndFeel(&customLookAndFeel);
     juce__slider5->addListener (this);
 
-    juce__slider5->setBounds (450, 113, 64, 64);
+    juce__slider5->setBounds (695, 238, 50, 70);
 
     juce__slider6.reset (new juce::Slider ("res"));
     addAndMakeVisible (juce__slider6.get());
@@ -110,7 +110,7 @@ NewComponent::NewComponent ()
     juce__slider6->setLookAndFeel(&customLookAndFeel);
     juce__slider6->addListener (this);
 
-    juce__slider6->setBounds (614, 113, 64, 64);
+    juce__slider6->setBounds (695, 335, 50, 70);
 
     juce__slider7.reset (new juce::Slider ("Bubble/rate"));
     addAndMakeVisible (juce__slider7.get());
@@ -123,7 +123,7 @@ NewComponent::NewComponent ()
     juce__slider7->setLookAndFeel(&customLookAndFeel);
     juce__slider7->addListener (this);
 
-    juce__slider7->setBounds (450, 217, 64, 64);
+    juce__slider7->setBounds (215, 238, 50, 70);
 
     juce__slider8.reset (new juce::Slider ("Bubble/depth"));
     addAndMakeVisible (juce__slider8.get());
@@ -136,7 +136,7 @@ NewComponent::NewComponent ()
     juce__slider8->setLookAndFeel(&customLookAndFeel);
     juce__slider8->addListener (this);
 
-    juce__slider8->setBounds (614, 217, 64, 64);
+    juce__slider8->setBounds (215, 335, 50, 70);
 
     juce__slider9.reset (new juce::Slider ("ingain/in"));
     addAndMakeVisible (juce__slider9.get());
@@ -149,7 +149,7 @@ NewComponent::NewComponent ()
     juce__slider9->setLookAndFeel(&customLookAndFeel);
     juce__slider9->addListener (this);
 
-    juce__slider9->setBounds (16, 520, 64, 64);
+    juce__slider9->setBounds (25, 525, 50, 70);
 
     juce__slider10.reset (new juce::Slider ("outgain/out"));
     addAndMakeVisible (juce__slider10.get());
@@ -162,7 +162,7 @@ NewComponent::NewComponent ()
     juce__slider10->setLookAndFeel(&customLookAndFeel);
     juce__slider10->addListener (this);
 
-    juce__slider10->setBounds (720, 520, 64, 64);
+    juce__slider10->setBounds (885, 525, 50, 70);
 
     juce__slider11.reset (new juce::Slider ("DelayTime/Quant/TimeInMS"));
     addAndMakeVisible (juce__slider11.get());
@@ -175,7 +175,7 @@ NewComponent::NewComponent ()
     juce__slider11->setLookAndFeel(&customLookAndFeel);
     juce__slider11->addListener (this);
 
-    juce__slider11->setBounds (182, 143, 107, 107);
+    juce__slider11->setBounds (380, 225, 75, 95);
 
     juce__slider12.reset (new juce::Slider ("spread"));
     addAndMakeVisible (juce__slider12.get());
@@ -188,12 +188,12 @@ NewComponent::NewComponent ()
     juce__slider12->setLookAndFeel(&customLookAndFeel);
     juce__slider12->addListener (this);
 
-    juce__slider12->setBounds (450, 424, 64, 64);
+    juce__slider12->setBounds (526, 244, 37.5f, 57.5f);
 
     juce__comboBox.reset (new juce::ComboBox ("DelayTime/Quant/TimeInBeats"));
     addAndMakeVisible (juce__comboBox.get());
     juce__comboBox->setEditableText (false);
-    juce__comboBox->setJustificationType (juce::Justification::centredLeft);
+    juce__comboBox->setJustificationType (juce::Justification::centred);
     juce__comboBox->setTextWhenNothingSelected (TRANS ("beats"));
     juce__comboBox->setTextWhenNoChoicesAvailable (TRANS ("(no choices)"));
     juce__comboBox->addItem (TRANS ("1/8"), 1);
@@ -204,12 +204,12 @@ NewComponent::NewComponent ()
     juce__comboBox->setLookAndFeel(&comboBoxLookAndFeel);
     juce__comboBox->addListener (this);
 
-    juce__comboBox->setBounds (178, 255, 53.5f, 27);
+    juce__comboBox->setBounds (338, 244, 37.5f, 37.5f);
 
     juce__comboBox2.reset (new juce::ComboBox ("DelayTime/Quant/quant"));
     addAndMakeVisible (juce__comboBox2.get());
     juce__comboBox2->setEditableText (false);
-    juce__comboBox2->setJustificationType (juce::Justification::centredLeft);
+    juce__comboBox2->setJustificationType (juce::Justification::centred);
     juce__comboBox2->setTextWhenNothingSelected (TRANS ("quantization"));
     juce__comboBox2->setTextWhenNoChoicesAvailable (TRANS ("(no choices)"));
     juce__comboBox2->addItem (TRANS ("free"), 1);
@@ -219,26 +219,27 @@ NewComponent::NewComponent ()
     juce__comboBox2->setLookAndFeel(&comboBoxLookAndFeel);
     juce__comboBox2->addListener (this);
 
-    juce__comboBox2->setBounds (240, 255, 53.5f, 27);
+    juce__comboBox2->setBounds (461, 244, 37.5f, 37.5f);
 
     juce__comboBox3.reset (new juce::ComboBox ("Bubble/burst"));
     addAndMakeVisible (juce__comboBox3.get());
     juce__comboBox3->setEditableText (false);
-    juce__comboBox3->setJustificationType (juce::Justification::centredLeft);
+    juce__comboBox3->setJustificationType (juce::Justification::centred);
     juce__comboBox3->setTextWhenNothingSelected (TRANS ("burst"));
     juce__comboBox3->setTextWhenNoChoicesAvailable (TRANS ("(no choices)"));
     juce__comboBox3->addItem (TRANS ("4"), 1);
     juce__comboBox3->addItem (TRANS ("8"), 2);
     juce__comboBox3->addItem (TRANS ("16"), 3);
+    juce__comboBox3->setSelectedId(3, false);
     juce__comboBox3->setLookAndFeel(&comboBoxLookAndFeel);
     juce__comboBox3->addListener (this);
 
-    juce__comboBox3->setBounds (624, 443, 53.5f, 27);
+    juce__comboBox3->setBounds (603, 525, 50, 50);
 
     juce__comboBox4.reset (new juce::ComboBox ("Pitch/transp"));
     addAndMakeVisible (juce__comboBox4.get());
     juce__comboBox4->setEditableText (false);
-    juce__comboBox4->setJustificationType (juce::Justification::centredLeft);
+    juce__comboBox4->setJustificationType (juce::Justification::centred);
     juce__comboBox4->setTextWhenNothingSelected (TRANS ("transp"));
     juce__comboBox4->setTextWhenNoChoicesAvailable (TRANS ("(no choices)"));
     juce__comboBox4->addItem (TRANS ("-24"), 1);
@@ -253,7 +254,7 @@ NewComponent::NewComponent ()
     juce__comboBox4->setLookAndFeel(&comboBoxLookAndFeel);
     juce__comboBox4->addListener (this);
 
-    juce__comboBox4->setBounds (624, 538, 53.5f, 27);
+    juce__comboBox4->setBounds (507, 525, 50, 50);
 
 
     //[UserPreSize]
@@ -313,39 +314,51 @@ void NewComponent::paint (juce::Graphics& g)
     //[UserPrePaint] Add your own custom painting code here..
     //[/UserPrePaint]
 
-    g.fillAll (juce::Colour (0xff001845)); 
+    g.fillAll (juce::Colour (0xff0d2b44)); 
 
     //[UserPaint] Add your own custom painting code here..
 
-    // Box 1: color 0353A4
-    g.setColour(juce::Colour(0xff0353A4));
-    g.fillRoundedRectangle(82.0f, 103.0f, 308.0f, 394.0f, 10.0f);
-    
-    // Box 2: color 023E7D
-    g.setColour(juce::Colour(0xff023E7D));
-    g.fillRoundedRectangle(410.0f, 103.0f, 308.0f, 187.0f, 10.0f);
-    
-    // Box 3: color 002855
+    // Circle 1
     g.setColour(juce::Colour(0xff002855));
-    g.fillRoundedRectangle(410.0f, 310.0f, 308.0f, 187.0f, 10.0f);
+    g.fillEllipse(140, 200, 200, 200);
+    
+    // Circle 2
+    g.setColour(juce::Colour(0xff023E7D));
+    g.fillEllipse(620, 200, 200, 200);
+    
+    // Circle 3
+    g.setColour(juce::Colour(0xff0353A4));
+    g.fillEllipse(330, 150, 300, 300);
 
     // TEXTO
 
-    g.setFont(juce::Font("Albert Sans", 64.0f, juce::Font::bold));
-    g.setColour(juce::Colour(0xffd4e6f1));
+    g.setFont(juce::Font("Helvetica Neue", 64.0f, juce::Font::plain));
+    g.setColour(juce::Colour(0xffffffff));
 
-    g.drawText("Bubble Delay", 10, 0, 393, 77, juce::Justification::centredLeft, false);
+    g.drawText("Bubble", 10, 10, 220, 77, juce::Justification::centred, false);
 
-    g.setFont(juce::Font("Albert Sans", 18.0f, juce::Font::bold));
-    g.setColour(juce::Colour(0xffd4e6f1));
+    g.setFont(juce::Font("Helvetica Neue", 18.0f, juce::Font::plain));
+    g.setColour(juce::Colour(0xffffffff));
 
-    g.drawText("Delay", 212, 77, 48, 22, juce::Justification::centredLeft, false);
-    g.drawText("Filter / Mod", 515, 77, 98, 22, juce::Justification::centredLeft, false);
-    g.drawText("Color", 540, 501, 47, 22, juce::Justification::centredLeft, false);
+    g.drawText("In", 41, 499, 17, 22, juce::Justification::centred, false);
+    g.drawText("Out", 894, 499, 33, 22, juce::Justification::centred, false);
+    g.drawText("Mix", 894, 0, 32, 22, juce::Justification::centred, false);
+    g.drawText("Delay", 455, 124, 50, 22, juce::Justification::centred, false);
+    g.drawText("Mod", 220, 175, 39, 22, juce::Justification::centred, false);
+    g.drawText("Filter", 697, 175, 46, 22, juce::Justification::centred, false);
     
-    g.setFont(juce::Font("Albert Sans", 16.0f, juce::Font::plain));
-    g.drawText("Time", 217, 120, 38, 19, juce::Justification::centredLeft, false);
-    g.drawText("Feedback", 200, 327, 72, 19, juce::Justification::centredLeft, false);
+    g.setFont(juce::Font("Helvetica Neue", 15.0f, juce::Font::plain));
+    g.drawText("Time", 400, 203, 36, 19, juce::Justification::centred, false);
+    g.drawText("Feedback", 445, 314, 70, 18, juce::Justification::centred, false);
+    g.drawText("Spread", 519, 224, 52, 18, juce::Justification::centred, false);
+    g.drawText("Rate", 223, 215, 33, 18, juce::Justification::centred, false);
+    g.drawText("Depth", 218, 312, 44, 18, juce::Justification::centred, false);
+    g.drawText("Freq", 705, 215, 33, 18, juce::Justification::centred, false);
+    g.drawText("Res", 706, 312, 27, 18, juce::Justification::centred, false);
+    g.drawText("Gate", 318, 503, 35, 18, juce::Justification::centred, false);
+    g.drawText("Saturation", 394, 503, 75, 18, juce::Justification::centred, false);
+    g.drawText("Pitch", 513, 504, 37, 18, juce::Justification::centred, false);
+    g.drawText("Burst", 608, 503, 39, 18, juce::Justification::centred, false);
 
     //[/UserPaint]
 }
@@ -550,7 +563,6 @@ void NewComponent::updateComboBoxForParam(unsigned long index, double value)
     if (processor == nullptr) return;
     RNBO::CoreObject& coreObject = processor->getRnboObject();
     auto denormalizedValue = coreObject.convertFromNormalizedParameterValue(index, value);
-
     auto comboBox = comboBoxesByParameterIndex.getReference((int) index);
     if (comboBox) {
         comboBox->setSelectedItemIndex(static_cast<int>(denormalizedValue), 

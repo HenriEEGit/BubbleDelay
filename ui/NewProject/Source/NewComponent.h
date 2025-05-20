@@ -57,13 +57,13 @@ public:
         g.fillRoundedRectangle(bounds, cornerSize);
 
         g.setColour(Colours::white);
-        g.setFont(Font("Albert Sans", label.getHeight() * 0.65f, Font::plain));
+        g.setFont(Font("Inter Bold", label.getHeight() * 0.65f, Font::plain));
         g.drawFittedText(label.getText(), label.getLocalBounds(), Justification::centred, 1);
     }
 
     Font getSliderPopupFont(Slider&) override
     {
-        return Font("Albert Sans", 16.0f, Font::plain);
+        return Font("Inter Bold", 16.0f, Font::plain);
     }
 
     void drawRotarySlider(Graphics& g, int x, int y, int width, int height, float sliderPos,
@@ -77,23 +77,47 @@ public:
         auto rw = radius * 2.0f;
         auto angle = rotaryStartAngle + sliderPos * (rotaryEndAngle - rotaryStartAngle);
 
+        auto mainColor = juce::Colour(0xffffffff);
+
+        String sliderName = slider.getName();
+        
+        if (sliderName == "Gate/threshold" || sliderName == "saturation") {
+            mainColor = juce::Colour(0xff002855); 
+        }
+        else {
+            mainColor = juce::Colour(0xffffffff); 
+        }
+
         // fill
-        g.setColour (juce::Colour (0xff979dac));
+        g.setColour (mainColor);
         g.fillEllipse (rx, ry, rw, rw);
 
         juce::Path p;
-        auto pointerLength = 2 * radius * 0.33f;
+        auto pointerLength = radius * 0.5f;
         auto pointerThickness = 4.0f;
         
-        if (slider.getWidth() == 107) 
+        /* if (slider.getWidth() == 107) 
         pointerThickness = 6.0f;
         else if (slider.getWidth() == 64)
-        pointerThickness = 4.0f;
+        pointerThickness = 4.0f; */
     
         p.addRectangle (-pointerThickness * 0.5f, -radius, pointerThickness, pointerLength);
         p.applyTransform (juce::AffineTransform::rotation (angle).translated (centreX, centreY));
 
-        g.setColour (juce::Colour (0xffd4e6f1));
+        if (sliderName == "Gate/threshold" || sliderName == "saturation" || sliderName == "mix"
+            || sliderName == "ingain/in" || sliderName == "outgain/out") {
+            g.setColour (juce::Colour (0xff001845)); 
+        } 
+        else if (sliderName == "Bubble/rate" || sliderName == "Bubble/depth") {
+            g.setColour (juce::Colour (0xff023e7d));
+        } 
+        else if (sliderName == "DelayTime/Quant/TimeInMS" || sliderName == "spread" || sliderName == "feedback") {
+            g.setColour (juce::Colour (0xff0353a4));
+        } 
+        else if (sliderName == "freq" || sliderName == "res"){ 
+            g.setColour (juce::Colour (0xff002855));
+        }
+
         g.fillPath (p);
     }
 };
@@ -104,43 +128,63 @@ public:
     void drawComboBox(Graphics& g, int width, int height, bool isButtonDown,
     int buttonX, int buttonY, int buttonW, int buttonH, ComboBox& box) override
     {
-    // Background color (matching your sliders)
-    auto mainColor = juce::Colour(0xff979dac);
+        
+        auto mainColor = juce::Colour(0xffffffff);
 
-    // Create a rounded rectangle with 10px corners
-    auto cornerSize = 10.0f;
-    auto bounds = Rectangle<int>(0, 0, width, height).toFloat().reduced(0.5f, 0.5f);
+        String boxName = box.getName();
+        
+        if (boxName == "DelayTime/Quant/TimeInBeats" || boxName == "DelayTime/Quant/quant") {
+            mainColor = juce::Colour(0xff0353A4); 
+        }
+        else if (boxName == "Bubble/burst" || boxName == "Pitch/transp") {
+            mainColor = juce::Colour(0xff002855); 
+        }
 
-    // Fill the background
-    g.setColour(mainColor);
-    g.fillRoundedRectangle(bounds, cornerSize);
+        auto diameter = std::min(width, height); // Ensure a perfect circle
 
+        auto bounds = Rectangle<float>((width - diameter) / 2.0f,
+                                   (height - diameter) / 2.0f,
+                                   (float)diameter,
+                                   (float)diameter);
+
+        g.setColour(mainColor);
+        g.fillEllipse(bounds);
+        
+        /* String textToDisplay = box.getText();
+        if (textToDisplay.isEmpty()) {
+
+            textToDisplay = box.getTextWhenNothingSelected();
+        } */
+        
+        // Draw the selected text value instead of the default dropdown arrow
+        if (box.getText().isNotEmpty())
+        {
+            g.setColour(Colours::white);
+            g.setFont(getComboBoxFont(box));
+            g.drawText(box.getText(), bounds.toNearestInt(), Justification::centred, false);
+        }
     }
 
     Font getComboBoxFont(ComboBox& box) override
     {
-        return Font("Albert Sans", box.getHeight() * 0.65f, Font::plain);
+        return Font("Inter Bold", box.getHeight() * 0.33f, Font::plain);
     }
 
     void positionComboBoxText(ComboBox& box, Label& label) override
     {
-        label.setBounds(10, 1, box.getWidth() - 30, box.getHeight() - 2);
-        label.setFont(getComboBoxFont(box));
+        label.setVisible(false);
     }
     
-    // 🎨 Custom pop-up menu font
     Font getPopupMenuFont() override
     {
-        return Font("Albert Sans", 16.0f, Font::plain);
+        return Font("Inter Bold", 16.0f, Font::plain);
     }
 
-    // 🎨 Custom background for the pop-up menu
     void drawPopupMenuBackground(Graphics& g, int width, int height) override
     {
-        g.fillAll(Colour(0xff979dac)); // Dark blue background
+        g.fillAll(Colour(0xff0353A4)); 
     }
 
-    // 🎨 Custom styling for pop-up menu items
     void drawPopupMenuItem(Graphics& g, const Rectangle<int>& area, bool isSeparator, bool isActive,
         bool isHighlighted, bool isTicked, bool hasSubMenu, const String& text,
         const String& shortcutKeyText, const Drawable* icon, const Colour* textColour) override
@@ -152,7 +196,7 @@ public:
             return;
         }
 
-        Colour backgroundColor = isHighlighted ? Colour(0xff001845) : Colour(0xff979dac);
+        Colour backgroundColor = isHighlighted ? Colour(0xff001845) : Colour(0xff0353A4);
         g.setColour(backgroundColor);
         g.fillRoundedRectangle(area.toFloat(), 4.0f);
 
